@@ -123,7 +123,7 @@ def run():
             st.write('## Sentiment positive sebanyak', len(df_sentiment_positive))
             st.write('## Sentiment negative sebanyak', len(df_sentiment_negative))
 
-    # B. For Manual        
+    # B. For Manual       
     else:
         # Create Form
         sentence = st.text_input('Sentence', value='', help='Write a sentence')
