@@ -11,7 +11,7 @@ def run():
     df = pd.read_csv('sunscreen_labeled_data_test_nolabel.csv')
     # st.dataframe(df.head())
 
-    st.title('Exploratory Data Analysis')
+    st.title('Exploratory Data Analysis coba')
 #     plot_selection = st.selectbox(label='Choose', 
 #                                   options=['Customer Demographic', 
 #                                            'Churn by Monthly Charge',
