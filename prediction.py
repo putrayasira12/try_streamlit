@@ -17,7 +17,7 @@ def run():
     model_affiliate = load_model('model_affiliate')
 
     # Load Model Sentiment
-    model_sentiment = load_model('model_sentimenthahhaa')
+    model_sentiment = load_model('model_sentiment')
 
     # Choice of input: Upload or Manual Input
     inputType = st.selectbox("How would you like to input data ?", ["Upload Excel or CSV File", "Manual Input"])
