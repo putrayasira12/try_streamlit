@@ -32,5 +32,5 @@ if selected == 'About':
     home.run()
 elif selected == 'EDA':
     eda.run()
-# else:
-#     prediction.run()
+else:
+    prediction.run()
