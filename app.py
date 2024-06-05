@@ -2,7 +2,7 @@ import streamlit as st
 from streamlit_option_menu import option_menu 
 import home
 import eda
-import prediction
+# import prediction
 from PIL import Image
 
 st.set_page_config(
@@ -32,5 +32,5 @@ if selected == 'About':
     home.run()
 elif selected == 'EDA':
     eda.run()
-else:
-    prediction.run()
+# else:
+#     prediction.run()
