@@ -7,12 +7,15 @@ def run():
     
     st.write('## Background :')
     st.markdown('''
-                ini gege banget tau gaaaaa
+                Sunscreen is a fundamental skincare product widely sought after by the community due to its protective properties against harmful UV rays. 
+                Consequently, the sentiment analysis aims to delve deeper into consumer perceptions, providing valuable insights into their sentiments towards sunscreen,
+                thereby enhancing product understanding and market strategies.
                 ''')
 
     st.write('## Project Objective :')
     st.markdown('''
-                membuat anjay anjay gaming
+                Sentiment Sunscreeen (SenSee) explores netizens' sentiments on sunscreen by distinguishing between affiliated and non-affiliated sentiments with precision,
+                before delving deeper to uncover netizens' true views on sunscreen products, creating sharp insights in consumer analytics for companies to put to good use.
                 ''')
 
 if __name__ == '__main__':
