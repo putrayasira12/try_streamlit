@@ -111,9 +111,9 @@ def run():
             predictData(df)
             df_sentiment_lanjut = df[df['Affiliate'] == 0]
             df_sentiment_galanjut = df[df['Affiliate'] == 1]
-            st.write('## Dari total', len(df),' didapatkan :')
-            st.write('## Jumlah data tergolong affiliate sebanyak', len(df_sentiment_galanjut))
-            st.write('## Jumlah data tergolong non affiliate sebanyak', len(df_sentiment_lanjut))
+            st.write('### Dari total', len(df),' didapatkan :')
+            st.write('### Jumlah data tergolong affiliate sebanyak', len(df_sentiment_galanjut))
+            st.write('### Jumlah data tergolong non affiliate sebanyak', len(df_sentiment_lanjut))
 
             # Menghitung jumlah setiap kategori
             a = df['Affiliate'].value_counts()
@@ -143,9 +143,9 @@ def run():
             
             df_sentiment_positive = df_sentiment_lanjut[df_sentiment_lanjut['Sentiment'] == 1]
             df_sentiment_negative = df_sentiment_lanjut[df_sentiment_lanjut['Sentiment'] == 0]
-            st.write('## Dari total ', len(df_sentiment_lanjut), 'data non affiliate, didapati bahwa :')
-            st.write('## Sentimen positif sebanyak', len(df_sentiment_positive))
-            st.write('## Sentimen negatif sebanyak', len(df_sentiment_negative))
+            st.write('### Dari total ', len(df_sentiment_lanjut), 'data non affiliate, didapati bahwa :')
+            st.write('### Sentimen positif sebanyak', len(df_sentiment_positive))
+            st.write('### Sentimen negatif sebanyak', len(df_sentiment_negative))
             
             # Menghitung jumlah setiap kategori
             a = df_sentiment_lanjut['Sentiment'].value_counts()
@@ -161,20 +161,20 @@ def run():
 
             if len(df_sentiment_positive)>len(df_sentiment_negative):
                 st.write('''
-                        ## Mayoritas orang menyukai produk.
+                        ### Mayoritas orang menyukai produk.
                         ''')
                 st.write('''
-                        ### Saran yang dapat diberikan dari kami:
+                        #### Saran yang dapat diberikan dari kami:
                          - Dapat mengembangkan produk baru atau tipe baru dari sunscreen yang telah dijual
                          - Memaksimalkan penjualan kesuluruh penjuru Indonesia dikarenakan kebanyakan orang menyukai produk.
                          - Memanfaatkan exposure baik yang ada di media sosial untuk marketing dan nama baik perusahaan lebih lanjut.
                         ''')
             else:
                 st.write('''
-                        ## Mayoritas orang tidak menyukai dengan produk.
+                        ### Mayoritas orang tidak menyukai dengan produk.
                         ''')
                 st.write('''
-                        ### Saran yang dapat diberikan dari kami:
+                        #### Saran yang dapat diberikan dari kami:
                         - Mengevaluasi kembali produk yang telah diedarkan dikarenakan sentimen terhadap produk sedang tidak baik.
                         - Dapat memperbaiki formula yang ada pada produk yang dijual.
                         - Menggencarkan proses marketing seperti iklan dan pemanfaatan endorsement atau progeram afiliasi.
@@ -198,11 +198,11 @@ def run():
                 pred_test_sentiment_class = np.where(pred_test_sentiment >= 0.5, 1, 0)
                 df['Sentiment'] = pred_test_sentiment_class
                 if df['Sentiment'][0] == 1:
-                    st.write('## Kalimat tergolong bukan affiliate dan memiliki sentiment Positive')
+                    st.write('### Kalimat tergolong bukan affiliate dan memiliki sentiment Positive')
                 else:
-                    st.write('## Kalimat tergolong bukan affiliate dan memiliki sentiment Negative')
+                    st.write('### Kalimat tergolong bukan affiliate dan memiliki sentiment Negative')
             else:
-                st.write('## Kalimat tergolong iklan atau affiliate')
+                st.write('### Kalimat tergolong iklan atau affiliate')
 
 if __name__ == '__main__':
     run()
